@@ -1,0 +1,127 @@
+:root {
+    --primary:rgb(212, 240, 179)
+        ;
+    --secondary: #D33F49;
+    --light: #0f0202;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+   background-image: linear-gradient(
+    to bottom right,
+    #000 5%,
+    #202020 30%,
+    #3f3f41 60%,
+     #7d7d7e 80%
+
+   );
+
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 13px;
+}
+
+.list {
+    margin: 180px auto;
+    padding: 35px;
+    background-color:#d7d8d8;
+    width: 110%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.dateRight {
+    display:flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+    color: #aa0914;
+
+}
+
+#dateText {
+    letter-spacing: 5px;
+    text-transform:uppercase;
+    justify-content:center;
+    color: rgba(43, 40, 40, 0.733);
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight:bolder;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow:column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color:var(--dark);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: red;
+
+}
